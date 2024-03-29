@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var lista_funcionarios = ['viviane', 'rosnagela', 'miguel', 'pedro' ]
+       document.write(lista_funcionarios + '<br/>')
+       var f = function(valor,indice, array){
+        if(valor == 'pedro'){
+            array[indice] = 'klediane'
+            console.log(lista_funcionarios)
+            document.write(lista_funcionarios)
+        }
+       }
+       lista_funcionarios.forEach(f)
+        </script>
+</body>
+</html>

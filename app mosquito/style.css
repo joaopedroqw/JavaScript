@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(imagens/bg.jpg) ;
+    background-repeat: no-repeat;
+}
+.mosca1{
+    width: 50px;
+    height: 50px;
+}
+.mosca2{
+    width: 70px;
+    height: 70px;
+}
+.mosca3{
+    width: 100px;
+    height: 100px;
+}
+.lado1{
+transform: scaleX(1);
+}
+.lado2{
+    transform: scaleX(-1);
+}
+#painel{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+  
+bottom: 0px;
+border-top: 1px black;
+}
+#coracao{
+    float: left;
+    
+}
+.cronometro{
+    
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+
+}
+.lado1{
+    transform: scaleX(1);
+    
+}
+.lado2{
+    transform: scaleX(-1);
+}

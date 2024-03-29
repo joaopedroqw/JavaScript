@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="name" id="text" onfocus="modicarFoco()" onkeypress="pressionarTeclar()">
+    <script>
+        function modicarFoco(){
+            document.getElementById('text').style.background = 'red'
+        }
+        function pressionarTeclar(){
+            var modificar = document.getElementById('text').value
+            if(modificar.length < 3){
+                document.getElementById('text').style.background = 'yellow'
+            } else{
+            document.getElementById('text').style.background = 'green'
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+    

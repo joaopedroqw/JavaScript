@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="modificarCores('#008000')">
+    verde</button>
+
+     <button type="button" onmouseout="modificarCores('#FF0000')"> vermelho</button>
+
+    <div style="width: 100px; height: 100px ; border: solid;" id="cor" onmouseout="modificarCores('#FF0000')" onclick="modificarCores('#008000')"></div>
+    <script>
+function modificarCores(color){
+    document.getElementById('cor').style.background = color
+}
+
+    </script>
+</body>
+</html>

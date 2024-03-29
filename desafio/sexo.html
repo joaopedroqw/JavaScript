@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="idade.css">
+    </head>
+
+    <body>
+        
+
+        <header>
+            <h1> Verificar de idade</h1>
+        </header>
+
+        <section>
+            <label for="name">Ano de Nascimento</label>
+            <input type="text" name="name" id="Nascimento"> <br>
+
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="masculino">
+
+            <label for="feminino"> Feminino</label>
+            <input type="radio" name="sexo" id="feminino"><br>
+
+            <input onclick="Analisar()" type="button" value="Verificar">
+            <div id="msg">
+
+            </div>
+            <div id="foto">
+                <img src="#" alt="" id="imagem">
+            </div>
+        </section>
+        <script>
+            function Analisar() {
+                var img = document.getElementById('imagem')
+                var nascimento = document.getElementById('Nascimento').value
+                var masculino = document.getElementById('masculino')
+                var feminino = document.getElementById('feminino')
+                var idade =  2024 - nascimento
+               if(idade > 0 && idade < 18 &&){
+               img.src = 'foto-jovem.webp'
+               }
+            }
+
+
+        </script>
+
+
+
+
+
+
+
+    </body>
+
+</html>

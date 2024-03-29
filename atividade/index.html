@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<input type="text" name="nmae" id="inserir">
+<button onclick="adicionarElemento()" type="button"> adicionar</button>
+<button onclick="ordenarElemento()" type="button"> ordenar</button>
+<script>
+var objetos = Array('cadeira', 'impressora', 'garfo')
+
+function adicionarElemento(){
+    var verifica = document.getElementById('inserir').value
+    if(verifica == ''){
+        alert('valor invalido')
+    }
+    if(objetos.indexOf(verifica) !== -1){
+        alert('valor ja inserido')
+        document.getElementById('inserir').value = ''
+    }
+    else{
+        objetos.push(verifica)
+        console.log(objetos)
+        document.getElementById('inserir').value = ''
+    }
+    
+}
+ function ordenarElemento(){
+    objetos.sort()
+    console.log(objetos)
+ }
+
+
+</script>
+
+
+
+
+</body>
+</html>

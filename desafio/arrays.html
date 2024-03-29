@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div onclick="calcularMedia()" style="width: 120px; height: 120px; border: solid 1px;"> clique me mim</div>
+        <script>
+            function calcularMedia() {
+                var nome = window.prompt('digite seu nome')
+                var num1 = Number(window.prompt('digite um numero'))
+                var num2 = Number(window.prompt('digite um numero'))
+
+                var media = (num1 + num2) / 2
+                if (media <= 6) {
+                    document.write('Calculando a media final de' + nome + '<br/>')
+                    document.write('as notas obetidas foram de ' + num1 + 'e' + num2 + '<br/>')
+                    document.write('A media sera ' + media)
+                    document.write('estude um pouco mais')
+                } else {
+                    document.write('Calculando a media final de' + nome + '<br/>')
+                document.write('as notas obetidas foram de ' + num1 + 'e' + num2 + '<br/>')
+                document.write('A media sera ' + media)
+                document.write('meu parabens')
+                }
+                
+            }
+
+
+        </script>
+    </body>
+
+</html>

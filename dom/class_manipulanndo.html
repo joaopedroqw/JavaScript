@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .estilo1{
+            background-color: aquamarine;
+
+        }
+        .estilo2{
+background-color: pink;
+width: 500px;
+height: 550px;
+border-radius: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: justify;
+padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mensagem" class="estilo1"> Modificando cores</div>
+    <hr>
+    <button type="button" onclick="modificarClasse()"> Aplicar classe
+
+    </button>
+    <script>
+        function modificarClasse(){
+            document.getElementById('mensagem').className = 'estilo2'
+        }
+    </script>
+</body>
+</html>
